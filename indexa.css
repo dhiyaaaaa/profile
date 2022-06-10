@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+.hero{
+    width: 80%;
+    margin: auto;
+}
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25 px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #292929;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px; 
+}
+.banner{
+    display: flex;
+    margin-top: 80px;  
+}
+.left-column,.right-column{
+    flex-basis: 50%;
+}
+.right-column img{
+    width: 100%;
+}
+.search-box{
+    height: 25px;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+}
+.search-box img{
+    width: 25px;
+    cursor: pointer;
+}
+.search-box input{
+    width: 50%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+.left-column h1{
+    font-size: 70px;
+}
+.left-column h3{
+    font-size: 15px;
+}
+.left-column p{
+    font-size: 13px;
+    color: rgb(71, 42, 6);
+    margin: 50px 0;
+}
+.btn button{
+    padding: 7px 30 px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #704608;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #e08831;
+    background: transparent;
+    line-height: 28px;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: rgb(84, 20, 20);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+}
+.socials a i{
+    font-size: 1.1rem;
+
+}
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom{
+    background: rgb(235, 231, 231);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
